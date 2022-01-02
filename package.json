@@ -1,0 +1,16 @@
+{
+  "name": "stock-search-api",
+  "version": "1.0.0",
+  "description": "A api for the yahoo-finance node wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan S",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "yahoo-finance": "^0.3.7"
+  }
+}

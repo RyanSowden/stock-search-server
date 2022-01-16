@@ -23,7 +23,9 @@ app.post('/current',(req,res) => {
 })
 
 app.post('/history',(req,res) => {
-	const date_to = new Date().toISOString().slice(0,10);
+	const date1 = new Date();
+	date1.setDate(date1.getDate() + 1)
+	const date_to = date1.toISOString().slice(0,10);
 	const date2 = new Date()
 	date2.setDate(date2.getDate() - 7);
 	const date_from = date2.toISOString().slice(0,10);

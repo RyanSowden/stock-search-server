@@ -10,7 +10,7 @@ This is a stock search api, which is used for my [StockViz](https://github.com/R
 Installing and setting up the backend is easy:
 
 ```
-git clone 
+git clone https://github.com/RyanSowden/stock-search-server
 cd stock-search-server
 node index.js
 ```
@@ -31,7 +31,7 @@ To make a call to the /current end point:
 ``` curl --data "ticker=tsla" http://localhost:2000/current ```
 
 The return value will be a JSON array like the below:
-
+```
   "Age": 1,
   "preMarketSource": "DELAYED",
   "postMarketChangePercent": -0.0040697698,
@@ -69,13 +69,13 @@ The return value will be a JSON array like the below:
   "lastMarket": null,
   "marketCap": 888818630656
 }% 
-
+```
 ## History
 
 To make a call to the history end point:
 
 ``` curl --data "ticker=tsla" http://localhost:2000/history ```
-
+```
 [
   {
     "date": "2022-02-11T05:00:00.000Z",
@@ -128,7 +128,8 @@ To make a call to the history end point:
     "symbol": "tsla"
   }
 ]%              
-             
+```   
+
 ## Packages
 
 This app relies on the [yahoo-finance](https://www.npmjs.com/package/yahoo-finance) to make the calls to the Yahoo! finance api.
